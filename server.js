@@ -23,7 +23,6 @@ var Lawyer = connection.define('lawyer', {
 
 app.get('/lawyers', function(req, res) {
     Lawyer.all().success(function(data) {
-        console.log(data);
         res.send(data);
     })
 });
